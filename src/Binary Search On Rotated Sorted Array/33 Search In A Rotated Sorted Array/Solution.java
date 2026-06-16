@@ -1,5 +1,5 @@
 class Solution {
-    // TC-> O(n) SC-> O(1)
+    // TC-> O(log n) SC-> O(1)
     public int search(int[] arr, int target) {
         int n = arr.length;
         int st = 0, end = n-1, ans = -1;

@@ -1,5 +1,5 @@
 class Solution {
-    // TC-> O(n) SC-> O(1)
+    // TC-> O(n.log max) SC-> O(1)
     public int minEatingSpeed(int[] piles, int hours) {
         int n = piles.length;
         int min = 1;

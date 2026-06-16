@@ -1,5 +1,5 @@
 class Solution {
-    // TC-> O(n) SC-> O(1)
+    // TC-> O(n.log end) SC-> O(1)
     public int splitArray(int[] arr, int k) {
         int n = arr.length;
         if(k > n) return -1;
