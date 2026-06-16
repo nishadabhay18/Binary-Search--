@@ -1,5 +1,5 @@
 class Solution {
-    // TC-> O(n) SC-> O(1)
+    // TC-> O(log n) SC-> O(1)
     public int[] searchRange(int[] arr, int target) {
         int[] ans = {-1,-1};
         int st = search(arr, target, true);
