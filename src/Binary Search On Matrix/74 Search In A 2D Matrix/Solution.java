@@ -1,5 +1,5 @@
 class Solution {
-    // TC-> O(n) SC-> O(1)
+    // TC-> O(log(m × n)) SC-> O(1)
     public boolean searchMatrix(int[][] arr, int target) {
         int m = arr.length, n = arr[0].length;
         int st = 0, end = m*n-1;
