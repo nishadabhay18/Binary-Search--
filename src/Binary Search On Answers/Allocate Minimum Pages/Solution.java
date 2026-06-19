@@ -1,10 +1,10 @@
 class Solution {
-    // TC-> O(n) SC-> O(1)
-    public int splitArray(int[] arr, int k) {
+    // TC-> O(n.log end) SC-> O(1)
+    public int findPages(int[] arr, int k) {
         int n = arr.length;
         if(k > n) return -1;
         int st = 0, end = 0;
-        for (int i=0; i<n; i++) {
+        for(int i = 0; i < n; i++) {
             st = Math.max(st, arr[i]); // largest book
             end += arr[i];             // total pages
         }
@@ -21,8 +21,9 @@ class Solution {
     public boolean isPossible(int[] arr, int max, int k) {
         int curr = 0, count = 1;
         for(int pages : arr) {
-            if(curr + pages <= max) curr += pages;
-            else{
+            if(curr + pages <= max) {
+                curr += pages;
+            }else {
                 count++;
                 curr = pages;
                 if(count > k) return false;
